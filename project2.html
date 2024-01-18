@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: pink;
+        }
+        .images{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        img{
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+            margin: 10px;
+        }
+        hr{
+            border: 1px solid black;
+        }
+        @media screen and (max-width:900px) {
+            img{
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;"> Tic Tac Toe</h1>
+    <div class="container">
+        <div class="images">
+            <img src="image/P2I1.png" alt="">
+        </div><br/><br/>
+        <div class="info">
+           <p>
+            here's a description of the basic logic for a Tic Tac Toe game in JavaScript that i have used in project
+            <br/>
+            1.Initialization:<br/>
+            
+            Initialize a 3x3 game board, which could be represented as a two-dimensional array.
+            Track the current player, commonly represented as 'X' and 'O'.
+            Set a variable to track whether the game is over.<br/><br/>
+            2.Player Moves:<br/>
+            
+            Allow players to make moves by interacting with the cells on the board.
+            When a player makes a move, update the corresponding cell on the board with the current player's symbol ('X' or 'O').<br/><br/>
+            3.Switch Players:<br/>
+            
+            After each move, switch the current player to the other symbol.<br/><br/>
+            4.Check for a Winner:<br/>
+            
+            After each move, check if the current player has achieved a winning combination.
+            Winning combinations can occur in rows, columns, or diagonals.
+            If a winner is found, mark the game as over and declare the winning player.<br/><br/>
+            5.Check for a Draw:<br/>
+            
+            If the board is full and no winner is found, declare the game as a draw.<br/><br/>
+            6.End of Game:<br/>
+            
+            Once the game is over (either due to a win or a draw), prevent further player moves.<br/><br/>
+            7.Reset the Game:<br/>
+            
+            Provide an option to reset the game and start over.<br/>
+        </p>
+        </div>
+    </div>
+</body>
+</html>

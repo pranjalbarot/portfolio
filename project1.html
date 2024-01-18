@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: pink;
+        }
+        .images{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        img{
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+            margin: 10px;
+        }
+        hr{
+            border: 1px solid black;
+        }
+        @media screen and (max-width:900px) {
+            img{
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">CRUD operation</h1>
+    <div class="container">
+        <div class="images">
+            <img src="image/P1I1.png" alt="">
+            <img src="image/P1I2.png" alt="">
+            <img src="image/P1I3.png" alt="">
+            <img src="image/P1I4.png" alt="">
+            <img src="image/P1I5.png" alt="">
+            <img src="image/P1I6.png" alt="">
+        </div><br/><br/>
+        <div class="info">
+            <p>CRUD stands for Create, Read, Update, and Delete, which are the basic operations that can be performed on data in a database. These operations are essential for interacting with databases and managing the information stored within them. In the context of a PHP project, CRUD operations are commonly used to manipulate data in a database.
+                <br/>
+                Here's a brief description of each CRUD operation that i have used in project:
+                <br/><br/>
+                1.reate (C):
+                <br/>
+                Description: Creating or adding new records to the database.
+                Implementation in PHP:
+                Collected data from the user through a form or other input method.
+                Used PHP to process and validate the input data.
+                Inserted the validated data into the database using SQL INSERT statements.
+                <br/><br/>
+                2.Read (R):
+                <br/>
+                Description: Retrieving or fetching existing records from the database.
+                Implementation in PHP:
+                Retrieved data from the database using SQL SELECT statements.
+                Used PHP to format and displayed the retrieved data, often in the form of a web page or an API response.
+                <br/><br/>
+                3.Update (U):
+                <br/>
+                Description: Modifying or updating existing records in the database.
+                Implementation in PHP:
+                Collected the data to be updated from the user through a form or input method.
+                Used PHP to process and validate the updated data.
+                Updated the corresponding records in the database using SQL UPDATE statements.
+                <br/><br/>
+                4.Delete (D):
+                <br/>
+                Description: Removing or deleting records from the database.
+                Implementation in PHP:
+                Identify the records to be deleted, often based on user input or specific criteria.
+                Used PHP to execute SQL DELETE statements to remove the identified records from the database.<br/><br/>
+                In this PHP project, these CRUD operations are often associated with user interactions through a web interface. The backend PHP code communicates with a database (commonly using MySQL, PostgreSQL, or another database management system) to perform these operations.
+                <br/>
+                It's important to note that proper security measures, such as input validation, parameterized queries, and authentication, should be implemented to prevent common vulnerabilities like SQL injection and unauthorized access to sensitive data.
+                </p>
+        </div>
+    </div>
+</body>
+</html>
